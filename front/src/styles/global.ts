@@ -13,13 +13,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${props => props.theme.neutral};
+    background-color: ${props => props.theme.bg};
 
     font-size: 1.6rem;
     color: ${props => props.theme.white};
   }
 
+  p {
+    font-family: 'Epilogue', sans-serif;
+  }
+
   a {
     text-decoration: none;
+  }
+
+  a, button {
+    cursor: pointer;
   }
 `

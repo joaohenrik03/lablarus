@@ -1,74 +1,87 @@
-import { FooterContainer } from "./style";
+import { BottomContainer, FooterContainer, LeftContainer, RightContainer, TopContainer } from "./style";
+import logoSvg from '../../assets/logo.svg'
+import { InstagramLogo } from "@phosphor-icons/react";
 
 export function Footer() {
   return (
     <FooterContainer>
-      <div>
-        <section>
-          <div>
-            <img src="" alt="" />
+      <TopContainer>
+        <RightContainer>
+            <img src={logoSvg} alt="" />
             <p>
-              Great platform for the job seeker that passionate about startups. Find your dream job easier.
+              Ótima plataforma para quem procura emprego. Encontre a vaga dos seus sonhos com mais facilidade.
             </p>
-          </div>
+        </RightContainer>
 
-          <div>
-            <h3>About</h3>
+        <LeftContainer>
+            <div>
+              <h3>Sobre</h3>
 
-            <ul>
-              <li>
-                Terms
-              </li>
-              <li>
-                Terms
-              </li>
-              <li>
-                Terms
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section>        
-          <div>
-            <h3>Resources</h3>
-
-            <ul>
-              <li>
-                Contact Us
-              </li>
-              <li>
-                Contact Us
-              </li>
-              <li>
-                Contact Us
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Get job notifications</h3>
-            <p>The latest job news, articles, sent to your inbox weekly.</p>
+              <ul>
+                <li>
+                  <a href="#">Termos</a>
+                </li>
+                <li>
+                  <a href="#">Recomendação</a>
+                </li>
+                <li>
+                  <a href="#">Política de Privacidade</a>
+                </li>
+              </ul>
+            </div>
 
             <div>
-              <input type="text" />
-              <button>Subscribe</button>
-            </div>
-          </div>
-        </section>
-      </div>
+              <h3>Resources</h3>
 
-      <div>
+              <ul>
+                <li>
+                  <a href="">Documentos de ajuda</a>
+                </li>
+                <li>
+                  <a href="">Guia</a>
+                </li>
+                <li>
+                  <a href="">Atualizações</a>
+                </li>
+                <li>
+                  <a href="">Contate-nos</a>
+                </li>
+              </ul>
+            </div>
+        </LeftContainer>
+      </TopContainer>
+
+      <BottomContainer>
         <p>2021 @ JobHuntly. All rights reserved.</p>
 
         <ul>
-          <li>f</li>
-          <li>f</li>
-          <li>f</li>
-          <li>f</li>
-          <li>f</li>
+          <li>
+            <a href="#">
+            <InstagramLogo size={16} color="#fff" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <InstagramLogo size={16} color="#fff" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <InstagramLogo size={16} color="#fff" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <InstagramLogo size={16} color="#fff" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <InstagramLogo size={16} color="#fff" />  
+            </a>
+          </li>
         </ul>
-      </div>
+      </BottomContainer>
     </FooterContainer>
   )
 }
