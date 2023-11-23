@@ -50,6 +50,12 @@ export const LeftContainer = styled.div`
       color: ${props => props.theme.text};
       font-weight: 400;
       font-family: 'Epilogue', sans-serif;
+
+      transition: 0.2s;
+
+      &:hover {
+        filter: brightness(1.2);
+      }
     }
   }
 `
@@ -83,7 +89,15 @@ export const BottomContainer = styled.section`
       align-items: center;
 
       border-radius: 50%;
+      color: ${props => props.theme.white};
       background-color: #363a45;
+
+      transition: 0.2s;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.7); 
+        color: #363a45;
+      }
     }
   }
 `

@@ -1,13 +1,13 @@
 import { BottomContainer, FooterContainer, LeftContainer, RightContainer, TopContainer } from "./style";
 import logoSvg from '../../assets/logo.svg'
-import { InstagramLogo } from "@phosphor-icons/react";
+import { FacebookLogo, GithubLogo, InstagramLogo, LinkedinLogo, TwitterLogo } from "@phosphor-icons/react";
 
 export function Footer() {
   return (
     <FooterContainer>
       <TopContainer>
         <RightContainer>
-            <img src={logoSvg} alt="" />
+            <img src={logoSvg} alt="#" />
             <p>
               Ótima plataforma para quem procura emprego. Encontre a vaga dos seus sonhos com mais facilidade.
             </p>
@@ -35,16 +35,16 @@ export function Footer() {
 
               <ul>
                 <li>
-                  <a href="">Documentos de ajuda</a>
+                  <a href="#">Documentos de ajuda</a>
                 </li>
                 <li>
-                  <a href="">Guia</a>
+                  <a href="#">Guia</a>
                 </li>
                 <li>
-                  <a href="">Atualizações</a>
+                  <a href="#">Atualizações</a>
                 </li>
                 <li>
-                  <a href="">Contate-nos</a>
+                  <a href="#">Contate-nos</a>
                 </li>
               </ul>
             </div>
@@ -52,32 +52,32 @@ export function Footer() {
       </TopContainer>
 
       <BottomContainer>
-        <p>2021 @ JobHuntly. All rights reserved.</p>
+        <p>2023 @ JobHuntly. Todos os direitos reservados.</p>
 
         <ul>
           <li>
             <a href="#">
-            <InstagramLogo size={16} color="#fff" />
+            <InstagramLogo size={16} />
             </a>
           </li>
           <li>
             <a href="#">
-            <InstagramLogo size={16} color="#fff" />
+            <FacebookLogo size={16} />
             </a>
           </li>
           <li>
             <a href="#">
-            <InstagramLogo size={16} color="#fff" />
+            <LinkedinLogo size={16} />
             </a>
           </li>
           <li>
             <a href="#">
-              <InstagramLogo size={16} color="#fff" />
+              <GithubLogo size={16} />
             </a>
           </li>
           <li>
             <a href="#">
-              <InstagramLogo size={16} color="#fff" />  
+              <TwitterLogo size={16} />
             </a>
           </li>
         </ul>

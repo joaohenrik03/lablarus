@@ -1,36 +1,108 @@
-import { InstagramLogo } from "@phosphor-icons/react";
+import { FeaturedJobCard } from "./FeaturedJobCard";
 import { FeaturedJobsContainer } from "./style";
 
 export function FeaturedJobsSection() {
+  const jobsList = [{
+    name: 'Email Marketing',
+    typeTime: 'Full Time',
+    company: 'Revolut',
+    address: 'Madrid, Spain',
+    slogan: 'Revolut is looking for Email Marketing to help team ma ...',
+    feature: [{
+      name: 'Marketing',
+      color: 'yellow',
+    }, {
+      name: 'Design',
+      color: 'green',
+    }],
+  }, {
+    name: 'Email Marketing',
+    typeTime: 'Full Time',
+    company: 'Revolut',
+    address: 'Madrid, Spain',
+    slogan: 'Revolut is looking for Email Marketing to help team ma ...',
+    feature: [{
+      name: 'Marketing',
+      color: 'yellow',
+    }, {
+      name: 'Design',
+      color: 'green',
+    }],
+  }, {
+    name: 'Email Marketing',
+    typeTime: 'Full Time',
+    company: 'Revolut',
+    address: 'Madrid, Spain',
+    slogan: 'Revolut is looking for Email Marketing to help team ma ...',
+    feature: [{
+      name: 'Marketing',
+      color: 'yellow',
+    }, {
+      name: 'Design',
+      color: 'green',
+    }],
+  }, {
+    name: 'Email Marketing',
+    typeTime: 'Full Time',
+    company: 'Revolut',
+    address: 'Madrid, Spain',
+    slogan: 'Revolut is looking for Email Marketing to help team ma ...',
+    feature: [{
+      name: 'Marketing',
+      color: 'yellow',
+    }, {
+      name: 'Design',
+      color: 'green',
+    }],
+  }, {
+    name: 'Email Marketing',
+    typeTime: 'Full Time',
+    company: 'Revolut',
+    address: 'Madrid, Spain',
+    slogan: 'Revolut is looking for Email Marketing to help team ma ...',
+    feature: [{
+      name: 'Marketing',
+      color: 'yellow',
+    }, {
+      name: 'Design',
+      color: 'green',
+    }],
+  }, {
+    name: 'Email Marketing',
+    typeTime: 'Full Time',
+    company: 'Revolut',
+    address: 'Madrid, Spain',
+    slogan: 'Revolut is looking for Email Marketing to help team ma ...',
+    feature: [{
+      name: 'Marketing',
+      color: 'yellow',
+    }, {
+      name: 'Design',
+      color: 'green',
+    }],
+  }]
+
   return (
     <FeaturedJobsContainer>
-      <h2>Featured Jobs</h2>  
+      <h2>Featured <span>jobs</span></h2>
 
       <div>
         <ul>
-          <li>
-            <div>
-              <div>
-                <InstagramLogo size={48} color="#b41d1d" />
-
-                <span>Full Time</span>
-              </div>
-
-              <div>
-                <h4>Email Marketing</h4>
-                <address>Revolut <span>.</span> Madrid, Spain</address>
-              </div>
-
-              <p>
-                Revolut is looking for Email Marketing to help team ma ...
-              </p>
-
-              <div>
-                <span>Marketing</span>
-                <span>Design</span>
-              </div>
-            </div>
-          </li>
+          {
+            jobsList.map((job) => {
+              return (
+                <FeaturedJobCard 
+                  key={job.name}
+                  name={job.name}
+                  typeTime={job.typeTime}
+                  company={job.company}
+                  address={job.address}
+                  slogan={job.slogan}
+                  features={job.feature}
+                />
+              )
+            })
+          }
         </ul>
       </div>
     </FeaturedJobsContainer>
