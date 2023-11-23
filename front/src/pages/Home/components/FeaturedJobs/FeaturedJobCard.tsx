@@ -26,7 +26,7 @@ export function FeaturedJobCard({ name, typeTime, company, address, slogan, feat
 
       <FeaturedJobCardMid>
         <h4>{name}</h4>
-        <address>{company} <span>.</span> {address}</address>
+        <address>{company} <span></span> {address}</address>
       </FeaturedJobCardMid>
 
       <p>

@@ -84,7 +84,7 @@ export function FeaturedJobsSection() {
 
   return (
     <FeaturedJobsContainer>
-      <h2>Featured <span>jobs</span></h2>
+      <h2>Vagas em <span>destaque</span></h2>
 
       <div>
         <ul>
