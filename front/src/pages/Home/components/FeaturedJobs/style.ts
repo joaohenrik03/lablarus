@@ -15,10 +15,10 @@ export const FeaturedJobsContainer = styled.section`
   }
 
   ul {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    gap: 3.2rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3.2rem;
+    grid-row-gap: 3.2rem;
   }
 `

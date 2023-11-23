@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const RecognitionContainer = styled.section`
   background-color: ${props => props.theme.bg};
   padding-block: 4.8rem;
+  margin-top: 7.2rem;
 
   h3 {
     font-size: 1.8rem;
@@ -19,6 +20,11 @@ export const RecognitionContainer = styled.section`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3.2rem;
+    gap: 1.6rem;
+
+    img {
+      height: 4.8rem;
+      object-fit: cover;
+    }
   }
 `

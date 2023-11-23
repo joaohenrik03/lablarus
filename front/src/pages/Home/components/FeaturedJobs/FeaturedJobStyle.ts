@@ -55,5 +55,17 @@ export const FeaturedJobCardMid = styled.div`
     color: ${props => props.theme.text};
     font-family: 'Epilogue', sans-serif;
     font-style: normal;
+
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    height: 2px;
+    width: 2px;  
+
+    margin-inline: 0.8rem;
+
+    background-color: ${props => props.theme.text};
   }
 `

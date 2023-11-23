@@ -20,11 +20,17 @@ export function OutsetSection() {
         <OutsetFormContainer>
           <div>
             <span><MagnifyingGlass size={24} color="#000000" /></span>
-            <input type="text" />
+            <input type="text" placeholder="Nome da vaga" />
           </div>
           <div>
             <span><MapPin size={24} color="#000000" /></span>
-            <input type="text" />
+            <input type="text" placeholder="Ijuí, RS" list="cities" />
+            <datalist id="cities">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </datalist>
           </div>
           <button>Procurar vaga</button>
         </OutsetFormContainer>
